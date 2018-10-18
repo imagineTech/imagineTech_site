@@ -1,14 +1,14 @@
 import React from 'react';
-import Member from './Member';
+import TeamMember from './Member';
 
-const List = ({ members }) => {
+const TeamList = ({ members }) => {
     return (
         <div>
             {members.map(member => {
-                return <Member key={member.id} {...member} /> 
+                return <TeamMember key={member.id} member={member} /> 
             })}
         </div>
     );
 }
 
-export default List;
+export default TeamList;

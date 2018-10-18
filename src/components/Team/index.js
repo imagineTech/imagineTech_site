@@ -4,7 +4,7 @@ import TeamList from './List';
 class TeamContainer extends Component {
 
     state = {
-        memebers: [
+        members: [
             { id: 1, name: "Bob Wilson", role: "CEO" },
             { id: 2, name: "Kyile Globe", role: "CFO" },
             { id: 3, name: "Oscar Swanson", role: "COO" }
@@ -12,10 +12,10 @@ class TeamContainer extends Component {
     }
 
     render() {
-        const { memebers } = this.state;
+        const { members } = this.state;
         return (
             <div>
-                <TeamList memebers={memebers}/>
+                <TeamList members={members}/>
             </div>
         );
     }
