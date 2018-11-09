@@ -9,11 +9,8 @@ class ContactContainer extends Component {
 
     handleSubmit = e => {
         const { local } = this.state;
-        const { input_one, input_two, input_three} = e.target;
         e.preventDefault();
-        input_one.value = "";
-        input_two.value = "";
-        input_three.value = "";
+        e.target.reset();
         console.log(local)
     }
 
