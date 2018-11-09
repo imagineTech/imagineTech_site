@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# API Keys 
+/src/config/firebase.js
+
 # testing
 /coverage
 
