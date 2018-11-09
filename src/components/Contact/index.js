@@ -1,31 +1,34 @@
 import React, { Component } from 'react';
+import ContactSuccess from './Success';
 import ContactForm from './Form';
+import { addContactData } from './firebase';
 
 class ContactContainer extends Component {
 
     state = {
-        local: {}
+        contact_values: {},
+        success: false
     }
 
-    handleSubmit = e => {
-        const { local } = this.state;
+    submit = e => {
+        const { contact_values, success } = this.state;
         e.preventDefault();
         e.target.reset();
-        console.log(local)
+        addContactData(contact_values).then(doc => doc ? this.setState({ success: !success }) : null);
     }
 
-    handleChange = e => {
-        const { local } = this.state;
+    values = e => {
+        const { contact_values } = this.state;
         const { name, value } = e.target;
-        this.setState({
-            local: {...local, [name]: value}
-        })
+        this.setState({ contact_values: { ...contact_values, [name]: value } })
     }
 
     render() {
+        const { success } = this.state;
         return(
             <div>
-                <ContactForm submit={this.handleSubmit} change={this.handleChange} />
+                <ContactForm submit={this.submit} change={this.values} />
+                <ContactSuccess success={success} />
             </div>
         )
     }
