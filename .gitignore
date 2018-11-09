@@ -4,7 +4,7 @@
 /node_modules
 
 # API Keys 
-/src/config/firebase.js
+src/config/firebase.js
 
 # testing
 /coverage
