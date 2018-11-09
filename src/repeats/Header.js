@@ -6,12 +6,6 @@ const Header = () => {
         <header>
             <Link to="/">Home</Link>
             {' '}
-            <Link to="/team">Team</Link>
-            {' '}
-            <Link to="/portfolio">Portfolio</Link>
-            {' '}
-            <Link to="/services">Services</Link>
-            {' '}
             <Link to="/contact">Contact</Link>
         </header>
     )
