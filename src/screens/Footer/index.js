@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import Contact from '../../components/Contact';
-import FooterInfo from './Info';
+import FooterSocialInfo from './SocialInfo';
+import FooterContactForm from './ContactForm';
 
 class FooterContainer extends Component {
     render() {
         return(
             <div className="container">
             <div className="row">
-                <div className="col-sm-12 subscribe">
-                    <h3>Your suggestions means a lot</h3>
-                    <p>Send us your query and we'll get you back ASAP</p>                    
-                    <Contact/>
-                </div>
+                <FooterContactForm/>
             </div>
             <div className="row">
-                <FooterInfo/>
+                <FooterSocialInfo/>
             </div>
         </div>
         );

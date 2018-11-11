@@ -3,7 +3,9 @@ import CountDown from 'react-countdown-now';
 
 const Countdown = () => {
     return (
-            <CountDown date={1546300800000} />
+        <div className="timer">
+            <div style={{fontSize:'3em'}}><CountDown date={1546300800000} /></div>
+        </div>
     )
 }
 
