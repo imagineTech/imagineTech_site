@@ -20,7 +20,7 @@ const ContactForm = ({ submit, change }) => {
                     		<label class="sr-only" for="subscribe-email">Message</label>
 					<input type="text" name="message" onChange={change} placeholder="Message" class="subscribe-email form-control" id="subscribe-email"/>
 					</div><br/>
-					<button class="btn">Contact us</button>
+					<button class="btn">Contact</button>
         </form>
         
     )

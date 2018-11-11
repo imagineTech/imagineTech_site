@@ -5,7 +5,7 @@ const Construction = () => {
     return(
         <div className="col-sm-12">
             <h2>Under Construction</h2>
-            <p>We are working very hard on the new version of our site. It will bring a lot of new features. Stay tuned!</p>
+            <p>ImagineTech team is working very hard on the new version of our site. It will bring a lot of new features. Stay tuned!</p>
             <HomeCountdown/>
         </div>
     )
