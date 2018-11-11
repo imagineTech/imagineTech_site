@@ -3,7 +3,7 @@ import React from 'react';
 const Info = () => {
     return (
         <div class="col-sm-8 call-us">
-                    <p>Tel: <span>0039 123 45 789</span> | Skype: <span>info@imaginetech.net</span></p>
+                    <p>Tel: <span>908 546 0561</span> | Mail: <span>info@imaginetech.net</span></p>
                 </div>
     )
 }
