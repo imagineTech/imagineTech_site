@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeCountdown from './Countdown';
+import HomeCountdown from '../Countdown';
 
 class HomeContainer extends Component {
     render() {
