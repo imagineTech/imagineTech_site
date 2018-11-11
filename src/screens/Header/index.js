@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import HeaderLogo from './Logo';
+import HeaderInfo from './Info';
 
 class HeaderContainer extends Component {
     render() {
         return (
-            <div>
-                <HeaderLogo />
+            <div class="container">
+            <div class="row header">
+                <HeaderLogo/>
+                <HeaderInfo/>
+            </div>
             </div>
         );
     }

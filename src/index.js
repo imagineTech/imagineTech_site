@@ -3,5 +3,5 @@ import { render } from 'react-dom';
 import Root from './screens/Root';
 
 render(
-    <Root />, 
+    <Root/>, 
 document.getElementById('root'));

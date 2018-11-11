@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
+import Header from './Header';
 import Home from '../components/Home';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Footer from './Footer';
+
 
 class ScreenRoot extends Component {
     render() {
@@ -10,7 +10,6 @@ class ScreenRoot extends Component {
             <div>
                 <Header />
                 <Home />
-                <Contact />
                 <Footer />
             </div>
             

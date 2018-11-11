@@ -4,8 +4,10 @@ import HomeContent from './Content';
 class HomeContainer extends Component {
     render() {
         return(
-            <div>
-                <HomeContent />
+            <div className="coming-soon">
+                <div className="inner-bg">
+                    <HomeContent/>
+                </div>
             </div>
         )
     }
