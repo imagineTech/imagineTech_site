@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import ContactSuccess from './Success';
 import ContactForm from './Form';
+import Loader from './Loader';
 import { addContactData } from './firebase';
+
+import './Contact.css';
 
 class ContactContainer extends Component {
 
     state = {
         contact_values: {},
-        success: false
+        success: false,
+        isLoading:false
     }
 
     submit = e => {
-        const { contact_values, success } = this.state;
+        const { contact_values } = this.state;
         e.preventDefault();
         e.target.reset();
-        addContactData(contact_values).then(doc => doc ? this.setState({ success: !success }) : null);
+        this.setState({isLoading:true})
+        addContactData(contact_values).then(doc => doc ? this.setState((state)=>({ success: !state.success,isLoading:!state.isLoading })) : null);
     }
 
     values = e => {
@@ -24,10 +29,10 @@ class ContactContainer extends Component {
     }
 
     render() {
-        const { success } = this.state;
+        const { success,isLoading } = this.state;
         return(
             <div>
-                <ContactForm submit={this.submit} change={this.values} />
+                {isLoading?<Loader/>:<ContactForm submit={this.submit} change={this.values} />}
                 <ContactSuccess success={success} />
             </div>
         )
