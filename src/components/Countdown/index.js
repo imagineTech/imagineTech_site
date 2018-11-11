@@ -7,7 +7,7 @@ const renderer = ({ days,hours, minutes, seconds, completed }) => {
     return <div>We are live <a href="https://imaginetech.net">here</a></div>;
   } else {
     // Render a countdown
-    return <span>{days}days{" "}{hours}hours{" "}{minutes}minutes{" "}{seconds}seconds</span>;
+    return <span>{days} days{" "}{hours} hours{" "}{minutes} minutes{" "}{seconds} seconds</span>;
   }
 };
 
