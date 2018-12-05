@@ -136,5 +136,7 @@ header a:last-of-type {
 #hexagon img {
     transform: rotate(-90deg);
     margin-left: 2.5em;
+
+
     margin-top: 0.5em;
 }
