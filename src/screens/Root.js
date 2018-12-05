@@ -6,10 +6,11 @@ import Team from '../components/Team';
 import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
+import './Root.css';
 
 class ScreenRoot extends Component {
     render() {
-        return(
+        return (
             <div>
                 <Header />
                 <Switch>
@@ -20,7 +21,7 @@ class ScreenRoot extends Component {
                     <Route path="/contact" component={Contact} />
                 </Switch>
             </div>
-            
+
         )
     }
 }

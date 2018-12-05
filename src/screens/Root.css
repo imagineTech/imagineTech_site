@@ -1,0 +1,140 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101022;
+    color: white;
+    font-family: 'PT Serif', serif;
+}
+
+/* Standard Styles */
+
+button {
+    font-family: 'PT Sans';
+}
+
+button .btn-green {
+    background-color: #28C76F;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 38px;
+    font-weight: light;
+    line-height: 50px;
+    /*color: #101022;
+    */
+}
+
+header {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 1em;
+    color: white;
+    border-right: 3px solid white;
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+header a:last-of-type {
+    border-right: none;
+    margin-right: 0;
+}
+
+.home-hero {
+    background-image: url("../assets/img/home-top.jpg");
+    /* The image used */
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 500px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+
+.home-hero__text {
+    display: flex;
+    justify-content: center;
+
+}
+
+.home-hero__text h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-right: 1em;
+}
+
+.home-hero__service {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 345px;
+    margin-bottom: 30em;
+}
+
+.home-hero__service h4 {
+    margin-top: 3em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#hexagon {
+    width: 200px;
+    height: 110px;
+    background: #9c9ca3;
+    position: relative;
+    transform: rotate(90deg);
+}
+
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid #9c9ca3;
+}
+
+#hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 50px solid #9c9ca3;
+}
+
+#hexagon img {
+    transform: rotate(-90deg);
+    margin-left: 2.5em;
+    margin-top: 0.5em;
+}

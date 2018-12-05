@@ -2,9 +2,34 @@ import React from 'react';
 
 const Content = () => {
     return (
-        <div>
-            <h1>"Company Phrase"</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In placerat egestas risus. Vestibulum dignissim nec libero nec congue. Aenean lacinia turpis vel justo fermentum pulvinar. Praesent dapibus velit vel mauris tincidunt, at commodo libero lobortis. Pellentesque nec est nunc. Curabitur finibus turpis ante. Proin tristique molestie elit at varius. Maecenas aliquet venenatis enim. Phasellus sit amet mi eu lectus maximus pretium in eu velit. Vestibulum volutpat, dui ac faucibus rutrum, enim diam rhoncus sem, maximus rhoncus sem eros et nisl.</p>
+        <div className="home-hero">
+            <div className="home-hero__text"><h1 style={{color:'#004199'}}>Imagine.{" "}</h1><h1 style={{color:'#1A6CCC'}}>Believe.{" "}</h1><h1 style={{color:'#3398FF'}}>Create.</h1></div>
+            <div className="home-hero__service">
+                <div className="col">
+                    <div id="hexagon">
+                        <img src="https://picsum.photos/100"/>
+                    </div>
+                    <h4>Marketing and Research</h4>
+                </div>
+                <div className="col">
+                    <div id="hexagon">
+                        <img src="https://picsum.photos/100"/>
+                    </div>
+                    <h4>Single Page React Apps</h4>
+                </div>
+                <div className="col">
+                    <div id="hexagon">
+                        <img src="https://picsum.photos/100"/>
+                    </div>
+                    <h4>UX and Interface Design</h4>
+                </div>
+                <div className="col">
+                    <div id="hexagon">
+                        <img src="https://picsum.photos/100"/>
+                    </div>
+                    <h4>Backend Technologies</h4>
+                </div>
+            </div>
         </div>
     )
 }
