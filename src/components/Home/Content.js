@@ -4,7 +4,7 @@ const Content = () => {
     return (
         <div className="content-box">
         <div className="home-hero">
-            <div className="home-hero__text animated bounceInLeft"><h1 style={{color:'#004199'}}>Imagine.{" "}</h1><h1 style={{color:'#1A6CCC'}}>Believe.{" "}</h1><h1 style={{color:'#3398FF'}}>Create.</h1></div>
+            <div className="home-hero__text animated bounceInLeft"><h3 style={{color:'#004199'}}>Imagine.{" "}</h3><h3 style={{color:'#1A6CCC'}}>Believe.{" "}</h3><h3 style={{color:'#3398FF'}}>Create.</h3></div>
         </div>
         <div className="hero"><div className="home-hero__text animated bounceInLeft"><h1 style={{color:'#004199'}}>Imagine.{" "}</h1><h1 style={{color:'#1A6CCC'}}>Believe.{" "}</h1><h1 style={{color:'#3398FF'}}>Create.</h1></div></div>
         <div className="home-hero__service">

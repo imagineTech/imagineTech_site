@@ -13,7 +13,7 @@ class Header extends React.Component {
         return (
             <div className="top">
             <header>
-            <div className="logo"><img src={'../assets/Logo.png'} /></div>
+            <div className="logo"><img src={'../assets/Logo.png'} width="80%"/></div>
             <div className="menu">
                 <Link to="/">Home</Link>
                 <Link to="/team">Team</Link>
