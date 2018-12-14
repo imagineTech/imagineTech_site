@@ -14,6 +14,13 @@ class Header extends React.Component {
             <div className="top">
             <header>
             <div className="logo"><img src={'../assets/Logo.png'} /></div>
+            <div className="menu">
+                <Link to="/">Home</Link>
+                <Link to="/team">Team</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/services">Services</Link>
+                <Link to="/contact">Contact</Link>
+            </div>
             <div className="menu-collapse" onClick={this.handleToggle}>
                 <div className="hamburger"></div>
                 <div className="hamburger"></div>
@@ -21,7 +28,7 @@ class Header extends React.Component {
             </div>
             
         </header>
-        <div className={!!hamburger?"hamburger-menu animated bounceInDown":"menu"}>
+        <div className={!!hamburger?"hamburger-menu animated bounceInDown":"h-menu"}>
         <ul>
                 <li><i class="fab fa-houzz"></i><Link to="/">Home</Link></li>
                 <li><i class="fas fa-male"></i><Link to="/team">Team</Link></li>

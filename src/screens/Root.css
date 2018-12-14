@@ -14,7 +14,8 @@ header {
     align-items: center;
 }
 
-.menu {
+.menu,
+.h-menu {
     display: none;
 }
 
@@ -174,20 +175,18 @@ ul {
 .home-hero__service {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 345px;
+    /*padding-top: 345px;*/
     flex-wrap: wrap;
     /*margin-bottom: 30em;*/
 }
 
 .home-hero__service h4 {
-
     margin-top: 3em;
     font-family: 'Lato', sans-serif;
-
     font-weight: 300;
-
+    width: 100px;
+    padding-left: 2.3em;
     font-size: 1.25rem;
-
 }
 
 /*.col {
@@ -204,6 +203,7 @@ ul {
 /*}*/
 
 #hexagon {
+    margin-top: 3em;
     width: 200px;
     height: 110px;
     background: #9c9ca3;
@@ -242,5 +242,54 @@ ul {
     margin-left: 2.5em;
 
     margin-top: 0.5em;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-collapse {
+        display: none;
+    }
+    .h-menu {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .menu a {
+        padding-right: 0.5em;
+        margin-right: 0.5em;
+        border-right: 5px solid white;
+    }
+    .menu a:last-of-type {
+        border-right: 0;
+    }
+    .content-box {
+        display: flex;
+        justify-content: center;
+        background-image: url("../assets/img/home-top.jpg");
+        /*The image used */
+        background-color: #cccccc;
+        /*Used if the image is unavailable */
+        height: 500px;
+        /*You must set a specified height */
+        background-position: center;
+        /*Center the image */
+        background-repeat: no-repeat;
+        /*Do not repeat the image */
+        background-size: cover;
+        /*Resize the background image to cover the entire container */
+    }
+    .home-hero {
+        display: none;
+    }
+    .home-hero__service {
+        padding-top: 400px;
+    }
+    .home-hero__service .col {
+        margin-right: 3em;
+    }
+    .home-hero__text {
+        display: block;
+    }
 
 }
