@@ -55,110 +55,14 @@ ul {
     padding: 0;
 }
 
-/*html,*/
-
-/*body {*/
-
-/*    margin: 0;*/
-
-/*    padding: 0;*/
-
-/*    background-color: #101022;*/
-
-/*    color: white;*/
-
-/*    font-family: 'PT Serif', serif;*/
-
-/*}*/
-
-/* Standard Styles */
-
-/*button {*/
-
-/*    font-family: 'PT Sans';*/
-
-/*}*/
-
-/*button .btn-green {*/
-
-/*    background-color: #28C76F;*/
-
-/*}*/
-
-/*h1 {*/
-
-/*    font-family: 'PT Serif', serif;*/
-
-/*    font-size: 38px;*/
-
-/*    font-weight: light;*/
-
-/*    line-height: 50px;*/
-
-/*color: #101022;
-    */
-
-/*}*/
-
-/*header {*/
-
-/*    display: flex;*/
-
-/*    list-style-type: none;*/
-
-/*    justify-content: space-between;*/
-
-/*    align-items: center;*/
-
-/*    margin: 0.5rem;*/
-
-/*}*/
-
-/*.menu {*/
-
-/*    display: flex;*/
-
-/*    list-style-type: none;*/
-
-/*}*/
-
-/*header a {*/
-
-/*    text-decoration: none;*/
-
-/*    margin-right: 1em;*/
-
-/*    color: white;*/
-
-/*    border-right: 3px solid white;*/
-
-/*    padding-right: 1em;*/
-
-/*    font-size: 1.3em;*/
-
-/*}*/
-
-/*header a:last-of-type {*/
-
-/*    border-right: none;*/
-
-/*    margin-right: 0;*/
-
-/*}*/
 
 .home-hero {
     background-image: url("../assets/img/home-top.jpg");
-    /*The image used */
     background-color: #cccccc;
-    /*Used if the image is unavailable */
     height: 500px;
-    /*You must set a specified height */
     background-position: center;
-    /*Center the image */
     background-repeat: no-repeat;
-    /*Do not repeat the image */
     background-size: cover;
-    /*Resize the background image to cover the entire container */
 }
 
 .home-hero__text {
@@ -189,18 +93,9 @@ ul {
     font-size: 1.25rem;
 }
 
-/*.col {
-    */
-
-/*    display: flex;*/
-
-/*    flex-flow: column;*/
-
-/*    justify-content: center;*/
-
-/*    flex-wrap: wrap;*/
-
-/*}*/
+.hero {
+    display: none;
+}
 
 #hexagon {
     margin-top: 3em;
@@ -246,6 +141,9 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
+    .hero {
+        display: block;
+    }
     .menu-collapse {
         display: none;
     }
@@ -263,33 +161,27 @@ ul {
     .menu a:last-of-type {
         border-right: 0;
     }
-    .content-box {
+
+
+    .home-hero_service {
         display: flex;
-        justify-content: center;
+    }
+    .content-box {
         background-image: url("../assets/img/home-top.jpg");
-        /*The image used */
         background-color: #cccccc;
-        /*Used if the image is unavailable */
         height: 500px;
-        /*You must set a specified height */
         background-position: center;
-        /*Center the image */
         background-repeat: no-repeat;
-        /*Do not repeat the image */
         background-size: cover;
-        /*Resize the background image to cover the entire container */
     }
     .home-hero {
         display: none;
     }
+
     .home-hero__service {
-        padding-top: 400px;
+        padding-top: 315px;
     }
     .home-hero__service .col {
         margin-right: 3em;
     }
-    .home-hero__text {
-        display: block;
-    }
-
 }
