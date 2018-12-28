@@ -4,6 +4,7 @@ import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history'
 import Root from './screens/Root';
 import '../node_modules/animate.css/animate.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 const history = createBrowserHistory();
 
 render(
