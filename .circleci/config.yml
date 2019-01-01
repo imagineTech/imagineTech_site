@@ -56,8 +56,8 @@ workflows:
       - build
       - deploy-prod:
         type: approval
-          requires:
-            - build
+        requires:
+          - build
       
 
 
