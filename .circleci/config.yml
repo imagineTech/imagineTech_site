@@ -53,7 +53,9 @@ workflows:
   build_accept_deploy:
     jobs:
       - prepare
-      - build
+      - build:
+        - requires:
+          - prepare
       - deploy-prod:
         type: approval
         requires:
