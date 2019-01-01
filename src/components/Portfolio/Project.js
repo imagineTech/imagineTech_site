@@ -8,8 +8,8 @@ const PortfolioProject = ({ project }) => {
         <Link to="/">
         <div className="shadow" style={{padding:'1em'}}>
         <img src={project.img} width="100%"/>
-        <h4 className="mt-1">{project.name}</h4>
-        <p>{project.desc}</p>
+        <h4 className="mt-1 text-secondary">{project.name}</h4>
+        <p className="text-secondary">{project.desc}</p>
         </div>
         </Link>
       {/*<Card className="mb-1 mt-1" inverse>

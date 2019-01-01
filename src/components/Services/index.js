@@ -7,12 +7,12 @@ class ServicesContainer extends Component {
     render() {
         return( 
             <div>
-                <div style={{backgroundColor:'#1a6ccc',padding:'1em'}}>
+                <div style={{backgroundColor:'#f4f4f4',padding:'1em',color:'black'}}>
                     <Container>
                         <FrontEnd/>
                     </Container>
                 </div>
-                <div style={{backgroundColor:'#3398ff',padding:'1em'}}>
+                <div style={{backgroundColor:'#f4f4f4',padding:'1em',color:'black'}}>
                     <Container>
                         <BackEnd/>
                     </Container>

@@ -10,16 +10,13 @@ const headingStyles = {
 
 const Backend = () => {
     return (
-        <div>
+        <div className="shadow p-4 mt-3">
         
         <Row>
             <div className="d-flex">
-                <Col lg="4">
-                    <img src={`../assets/img/it.png`} width="50%"/>
-                </Col>
-                <Col lg="8">
-                    <h1 className="text-shadowed__big">Future of Backend Technologies</h1>
-                    <p className="text-shadowed">Databases are at the core of every application. Yet, database access, migrations and data management workflows still are huge time sinks for developers. Our mission is to build the right abstractions and tools to save development time that should be spent on building valued-adding features.</p>
+                <Col lg="12">
+                    <h1 className="text-shadowed__big">Future of backend</h1>
+                    <p>NoSQL, NewSQL, BigData and counting.</p>
                 </Col>
                 
                 
@@ -32,23 +29,23 @@ const Backend = () => {
                 <div className="d-flex">
                     <Col lg="4">
                         
-                        <h3 className="text-shadowed__small">Frontend</h3>
+                        <h3 className="text-shadowed__small">NoSQL</h3>
                         <div className="d-flex align-items-center">
                             <img src={`../assets/img/graphql.svg`} width="50px" className="mr-1"/>
                             <img src={`../assets/img/node.svg`} width="50px" className="mr-1"/>
                             <img src={`../assets/img/react.svg`} width="50px"/>
                         </div>
-                        <p className="text-shadowed">Databases are at the core of every application. Yet, database access, migrations and data management workflows still are huge time sinks for developers. Our mission is to build the right abstractions and tools to save development time that should be spent on building valued-adding features.</p>
+                        <p>There are number of NoSQL databases available and we build web applications based on them. Now, no need to worry about scaling.</p>
                     </Col>
                     <Col lg="4">
                         
-                        <h3 className="text-shadowed__small">Databases</h3>
+                        <h3 className="text-shadowed__small">BigData</h3>
                         <div className="d-flex align-items-center">
                             <img src={`../assets/img/graphql.svg`} width="50px" className="mr-1"/>
                             <img src={`../assets/img/node.svg`} width="50px" className="mr-1"/>
                             <img src={`../assets/img/react.svg`} width="50px"/>
                         </div>
-                        <p className="text-shadowed">Databases are at the core of every application. Yet, database access, migrations and data management workflows still are huge time sinks for developers. Our mission is to build the right abstractions and tools to save development time that should be spent on building valued-adding features.</p>
+                        <p>To manage trillions of bytes of data BigData concept is the king and yes we support that.</p>
                     </Col>
                     <Col lg="4">
                         
@@ -58,7 +55,7 @@ const Backend = () => {
                             <img src={`../assets/img/node.svg`} width="50px" className="mr-1"/>
                             <img src={`../assets/img/react.svg`} width="50px"/>
                         </div>
-                        <p className="text-shadowed">Databases are at the core of every application. Yet, database access, migrations and data management workflows still are huge time sinks for developers. Our mission is to build the right abstractions and tools to save development time that should be spent on building valued-adding features.</p>
+                        <p>APIs are most powerful and the true power is not unleased yet, but they are the future of data piping. Gone are the days when MySQL, MongoDB etc on local computer was a thing.</p>
                     </Col>
                     </div>
                 </Row>

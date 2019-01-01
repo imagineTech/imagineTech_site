@@ -33,7 +33,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" expand="md" light>
+        <Navbar color="faded" expand="md" light className="fixed-top bg-header">
           <NavbarBrand tag={Link} to="/"><img src={'../assets/Logo.png'}/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -55,13 +55,6 @@ export default class Header extends React.Component {
                 <DropdownMenu right>
                   <DropdownItem>
                     <NavLink tag={Link} to="/team">The Team</NavLink>
-                  </DropdownItem>
-                  <DropdownItem>
-                    <NavLink tag={Link} to="/ceo">CEO Notes</NavLink>
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    <NavLink tag={Link} to="/ninja">Ninjas</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

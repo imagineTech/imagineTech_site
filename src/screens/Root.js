@@ -25,7 +25,6 @@ class ScreenRoot extends Component {
     render() {
         return (
             <Wrapper>
-                
                 <Header />
                 <Switch>
                     <Route exact path="/" component={Home} />
