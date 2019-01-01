@@ -10,13 +10,15 @@ jobs:
       - run:
           name: Setup Dependencies
           command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
       - run:
           name: Build project
           command: CI=false npm run build
       - run:
           name: Deploy to firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+          
+          
+#- save_cache:
+#          key: dependency-cache-{{ checksum "package.json" }}
+#          paths:
+#            - ./node_modules
