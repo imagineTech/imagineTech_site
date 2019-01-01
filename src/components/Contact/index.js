@@ -44,7 +44,7 @@ class ContactContainer extends Component {
                     <div class="bd-example">
                       <address>
                         <strong>ImagineTech, Inc.</strong><br/>
-                        1355 Market St, Suite 900<br/>
+                        1355 Market St, Suite 901<br/>
                         Salt Lake City, UT 84101<br/>
                         <abbr title="Phone">P:</abbr> (908) 546-0561
                       </address>
