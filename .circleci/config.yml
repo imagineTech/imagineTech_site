@@ -11,11 +11,14 @@ jobs:
           name: Setup Dependencies
           command: npm install
       - run:
+          name: Setup global Dependencies
+          command: npm install firebase-tools -g
+      - run:
           name: Build project
           command: CI=false npm run build
       - run:
           name: Deploy to firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+          command: firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
           
           
 #- save_cache:
