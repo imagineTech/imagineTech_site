@@ -34,7 +34,7 @@ export default class Header extends React.Component {
     return (
       <div>
         <Navbar color="faded" expand="md" light className="fixed-top bg-header">
-          <NavbarBrand tag={Link} to="/"><img src={'../assets/Logo.png'}/></NavbarBrand>
+          <NavbarBrand tag={Link} to="/"><img src={'../assets/Logo_long.png'}/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
