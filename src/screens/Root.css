@@ -1,0 +1,129 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101022;
+    color: white;
+    font-family: 'PT Serif', serif;
+}
+
+p {
+    font-family: 'Lato';
+}
+
+span a>i {
+    color: black;
+}
+
+nav>button {
+
+    color: white!important;
+    background: #3398ff!important;
+}
+
+.pointer {
+    cursor: pointer!important;
+}
+
+a {
+    text-decoration: none!important;
+    color: white!important;
+    font-size: 1em!important;
+    font-family: 'Lato';
+}
+
+a:hover {
+    color: #3398ff!important;
+    transition: color 1s!important;
+}
+
+nav>div>ul>li.dropdown.show.nav-item>div>button>a {
+    color: black!important;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    background-color: #e7e7e7;
+    color: black;
+    outline: none!important;
+    border: none;
+}
+
+.para {
+
+    color: black;
+    width: 500px;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+div>div.container>div>div>form>button {
+    background-color: #101022;
+}
+
+div>div.container>div>div>div {
+    border-radius: 0;
+}
+
+.shadow {
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.single-shadowed {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    /*8,6*/
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.inner-shadowed {
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.text-shadowed {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.text-shadowed__big {
+    text-shadow: 2px 2px 2px #f4f4f4;
+    font-weight: 700;
+    font-family: 'Lato';
+    /*color: #004199;*/
+    /*text-shadow: 0 1px #2ecc71,*/
+    /*-1px 0 #cdd2d5,*/
+    /*-1px 2px #808d93,*/
+    /*-2px 1px #cdd2d5,*/
+    /*-2px 3px #808d93,*/
+    /*-3px 2px #cdd2d5,*/
+    /*-3px 4px #808d93,*/
+    /*-4px 3px #cdd2d5,*/
+    /*-4px 5px #808d93,*/
+    /*-5px 4px #cdd2d5,*/
+    /*-5px 6px #808d93,*/
+    /*-6px 5px #cdd2d5,*/
+    /*-6px 7px #808d93,*/
+    /*-7px 6px #cdd2d5,*/
+    /*-7px 8px #808d93,*/
+    /*-8px 7px #cdd2d5;*/
+}
+
+.text-shadowed__small {
+    font-weight: 700;
+    font-family: 'PT Sans';
+}
+
+.bg-header {
+    background-color: #101022;
+}

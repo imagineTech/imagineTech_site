@@ -1,13 +1,16 @@
 import React from 'react';
 import PortfolioProject from './Project';
+import { Row } from 'reactstrap';
 
 const PortfolioList = ({ projects }) => {
     return (
-        <div>
-            {projects.map(project => {
-                return <PortfolioProject key={project.id} project={project} />
-            })}
-        </div>
+        <Row>
+            
+             {projects.map(project => {
+                 return <PortfolioProject key={project.id} project={project} />
+             })} 
+        
+        </Row>
     );
 }
 
